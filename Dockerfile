@@ -1,0 +1,7 @@
+FROM dockurr/windows
+
+ENV RAM_SIZE=4G
+ENV CPU_CORES=2
+ENV DISK_SIZE=20G
+
+VOLUME ["/storage"]
