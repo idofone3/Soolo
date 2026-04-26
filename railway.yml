@@ -1,0 +1,16 @@
+services:
+  - name: dockurr-windows
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: RAM_SIZE
+        value: "4G"
+      - key: CPU_CORES
+        value: "2"
+      - key: DISK_SIZE
+        value: "20G"
+    volumes:
+      - name: storage
+        mountPath: /storage
+
+volumes:
+  - name: storage
